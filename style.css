@@ -1,0 +1,40 @@
+body{
+  background-color: lightblue;
+}
+
+
+.wrapper{
+  background-color: white;
+  margin: auto;
+height: 100vw;
+width: 80%;
+}
+
+.header{
+  text-align: center;
+  border: solid 3px black;
+  background-color: lightgreen;
+}
+
+h1{
+  font-size: 70px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.navbar{
+  margin: auto;
+}
+
+li{
+  text-align: center;
+}
+
+ul li{
+    text-align: center;
+  font-family: sans-serif;
+  display: inline-block;
+    line-height: 40px;
+      list-style: none;
+      padding: 0 20px;
+}
