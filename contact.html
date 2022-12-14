@@ -6,16 +6,49 @@
     <title>Contact Us</title>
   </head>
   <body>
-
     <h1>Contact us</h1>
+<form id="myForm" onsubmit="return validateForm()">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="age">Age:</label><br>
+  <input type="number" id="age" name="age"><br>
+  <label for="gender">Gender:</label><br>
+  <input type="radio" id="male" name="gender" value="male"> Male<br>
+  <input type="radio" id="female" name="gender" value="female"> Female<br>
+  <input type="submit" value="Submit">
+</form>
+<script>
+  function validateForm() {
+    // Get the values of the input fields
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var age = document.getElementById('age').value;
+    var gender = document.querySelector('input[name="gender"]:checked').value;
 
-<div class="Form">
+    // Validate the input fields
+    if (name == "") {
+      alert("Please enter your name");
+      return false;
+    }
+    if (email == "") {
+      alert("Please enter your email address");
+      return false;
+    }
+    if (age == "") {
+      alert("Please enter your age");
+      return false;
+    }
+    if (gender == undefined) {
+      alert("Please select your gender");
+      return false;
+    }
 
-  <input type="text" name="" value="First Name">
-  <input type="text" name="" value="Last Name"><br><br>
-  <input type="text" name="" value="E-mail">
-</div>
-
+    // If the form is valid, submit it
+    return true;
+  }
+</script>
 <br>
     <a href="index.html">Go back</a>
 
