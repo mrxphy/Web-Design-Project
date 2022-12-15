@@ -1,80 +1,72 @@
-body{
+body {
   background-color: lightblue;
 }
 
-
-.wrapper{
+.wrapper {
   background-color: white;
   margin: auto;
-height: 100vw;
-width: 80%;
+  height: 100vw;
+  width: 80%;
 }
 
-.header{
+.header {
   text-align: center;
   border: solid 3px black;
   background-color: lightgreen;
 }
 
-h1{
+h1 {
   font-size: 70px;
   font-family: sans-serif;
   color: white;
 }
 
-h2{
+h2 {
   font-size: 40px;
   font-family: sans-serif;
 }
 
-h3{
+h3 {
   font-size: 30px;
   font-family: sans-serif;
 }
 
-h4{
+h4 {
   font-size: 20px;
   font-family: sans-serif;
 }
 
-p{
+p {
   font-family: sans-serif;
   font-size: 30px;
   margin: 10px;
 }
 
-.navbar{
+.navbar {
   float: none;
   background-color: gray;
   margin-top: -16px;
 }
 
-.body{
+.body {}
 
-}
-
-
-
-ul{
+ul {
   text-align: center;
 }
 
-li{
+li {}
 
+ul li {
+  font-family: sans-serif;
+  display: inline-block;
+  line-height: 40px;
+  list-style: none;
+  padding: 10px;
+  font-size: 30px;
+  color: white;
 }
 
-ul li{
-
-    font-family: sans-serif;
-    display: inline-block;
-    line-height: 40px;
-    list-style: none;
-    padding: 10px;
-    font-size: 30px;
-    color: white;
-}
-
-ul li a{
+ul li a {
   text-decoration: none;
   color: white;
   margin: 15px;
@@ -82,10 +74,46 @@ ul li a{
 
 @media only screen and (max-width: 768px) {
   /* styles for devices with a screen width up to 768px */
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 20px;
+  }
+  ul li {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   /* styles for devices with a screen width between 769px and 1024px */
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 25px;
+  }
+  ul li {
+    font-size: 25px;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
