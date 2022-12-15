@@ -23,6 +23,6 @@ function validateForm() {
     return false;
   }
 
-  // If the form is valid, submit it
+  // If the form is valid, submit it code done by cm 
   return true;
 }
